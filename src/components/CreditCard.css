@@ -1,0 +1,104 @@
+/* ---------- Card-Owner-Name ----------- */
+/* ---------- Card-Owner-Number --------- */
+
+.Card-Owner-Name, .Card-Owner-Number{
+    padding: 15px 0px 0px;
+}
+
+.Card-Owner-Name > *,.Card-Owner-Number > *{
+    width: 100%;
+}
+
+.Card-Owner-Name > label,.Card-Owner-Number > label{
+    font-weight: 500;
+}
+
+.Card-Owner-Name > input,.Card-Owner-Number > input{
+    width: 100%;
+    padding: 6px;
+    margin: 5px 0px 0px ;
+    border: 2px solid #0000007c;
+    border-radius: 3px;
+}
+
+
+
+/* ---------- Date and CVV --------------*/
+.date-and-cvv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.date-and-cvv>span:nth-child(n){
+    width: 60%;
+}
+.date-and-cvv>span:nth-child(n){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.date-and-cvv>span:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.date-and-cvv>span:nth-child(n)>label{
+    width: 100%;
+    padding: 0px 0px 5px;
+    font-weight: 500;
+}
+.date-and-cvv>span:nth-child(n)>input{
+    width: 48%;
+    padding: 6px;
+    border: 2px solid #0000007c;
+    border-radius: 3px;
+}
+.date-and-cvv>span:nth-child(2n){
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.date-and-cvv>span:nth-child(2n)>label{
+    font-weight: 500;
+}
+.date-and-cvv>span:nth-child(2n)>input{
+    padding: 6px;
+    border: 2px solid #0000007c;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 578px) {
+    .date-and-cvv>span:nth-child(2n)>input{
+        width: 80%;
+    }
+}
+
+
+/* --------------- Confirm Payment-------------------- */
+.confirm-payment{
+    padding: 20px 0px 10px;
+}
+#confirm-payment{
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+    padding: 9px 0px;
+    border-radius: 5px;
+    border: 0px solid blue;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+#confirm-payment:hover{
+    background-color: #0000ffab;
+}
