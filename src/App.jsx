@@ -3,7 +3,7 @@ import { BrowserRouter, Route , Routes , Link} from 'react-router-dom';
 import CreditCard from './components/CreditCard'
 import NetBanking from './components/NetBanking'
 import UPI from './components/UPI'
-import NotFound from './components/NotFound'
+
 import './App.css'
 
 
@@ -30,14 +30,14 @@ function App() {
           
               {/* Credit Card */}
               <span>
-                  <Link to="/">
+                  <Link to="/Web-Payment-Form/credit-card">
                     <span className={(active==1)?'credit-card active':'credit-card'} onClick={() => setActive(1)}>Credit Card</span>
                   </Link>
               </span>
 
               {/* Upi */}
               <span>
-                <Link to="/upi">
+                <Link to="/Web-Payment-Form/upi">
                   <span className={(active==2)?'upi active':'upi'}
                   onClick={() => setActive(2)}>UPI</span>
                 </Link>
@@ -45,7 +45,7 @@ function App() {
 
               {/* Net Banking */}
               <span>
-                  <Link to="/netbanking">
+                  <Link to="/Web-Payment-Form/netbanking">
                     <span className={(active==3)?'active':''} onClick={ () => setActive(3)}>Net Banking</span>
                   </Link>
               </span>
@@ -56,10 +56,9 @@ function App() {
         {/* ------------ Routing   ----------- */}
         <div className='routing-box'>      
             <Routes>
-                <Route path="/" element={<CreditCard/>} />
-                <Route path="/netbanking" element={<NetBanking/>} />
-                <Route path="/upi" element={<UPI/>} />
-                <Route path="*" element={<NotFound/>} />
+                <Route path="/Web-Payment-Form/credit-card" element={<CreditCard/>} />
+                <Route path="/Web-Payment-Form/netbanking" element={<NetBanking/>} />
+                <Route path="/Web-Payment-Form/upi" element={<UPI/>} />
             </Routes>
         </div>
 
