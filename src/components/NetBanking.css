@@ -1,0 +1,65 @@
+.net-banking{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.net-banking img{
+    padding: 30px;
+    height: 170px;
+    width: 170px;
+    /* border-radius: 50%; */
+}
+
+.nb-s-2{
+    width: calc(100% - 150px);
+    padding: 20px;
+}
+
+.bank-name,
+.bank-account,
+.bank-account-password{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.bank-name span,
+.bank-account span,
+.bank-account-password span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bank-name input,
+.bank-account input,
+.bank-account-password input{
+    margin-left: 20px;
+    border: 0.1px solid black;
+}
+
+.login-button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.login-button button{
+    width: 80%;
+    background-color: #3d43f5;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 0px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
