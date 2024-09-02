@@ -58,9 +58,9 @@
 
 ## Features 🚀
 
-- Credit Card
-- UPI
-- Net Banking
+- Credit Card Page
+- UPI Page
+- Net Banking Page
 
 
 
@@ -78,14 +78,22 @@
 
 
 2. Navigate to the directory:
+
     ```bash
-    cd to-do-app
+    cd Web-Payment-Form
     ```
 
-3. Install dependencies:
+4. Install dependencies:
+   
     ```bash
     npm install
     ```
+5. Run the application:
+   
+   ```bash
+   npm run dev -- --host
+   ```
+
 
 
 <!------------------------------------------------->
@@ -93,7 +101,11 @@
 
 ## Screenshot 🖼️
 
-![Credit Card](https://github.com/abhinavkumar2369/Web-Payment-Form/assets/170245635/c07e9267-b14d-45c6-aaaa-5dd500330234)
+![Credit-Card](https://github.com/user-attachments/assets/bc242141-37d8-4721-bcb6-c360928273d7)
+
+![Upi](https://github.com/user-attachments/assets/e10b86b0-f639-480f-8aaa-daad613adbf4)
+
+![Net-Banking](https://github.com/user-attachments/assets/6108035b-99c9-4e6d-99d4-f7a8d49fa218)
 
 
 <!------------------------------------------------->
