@@ -1,33 +1,71 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Route , Routes , Link} from 'react-router-dom';
+import CreditCard from './components/CreditCard'
+import NetBanking from './components/NetBanking'
+import UPI from './components/UPI'
+import NotFound from './components/NotFound'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() {
+  const [active, setActive] = useState(1)
+
+  
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+      {/* ------------ Browser Router --------------*/}
+      <BrowserRouter>
+        
+        {/* ------------- Payment Form --------------*/}
+        <div className="payment-form">
+
+          {/* ----------------- Heading --------------- */}
+          <div className="heading">
+            <h2>Payment Method</h2>
+          </div>
+          
+          {/* ---------- Payment Method -------------*/}
+          <div className="payment-methods">
+          
+              {/* Credit Card */}
+              <span>
+                  <Link to="/">
+                    <span className={(active==1)?'credit-card active':'credit-card'} onClick={() => setActive(1)}>Credit Card</span>
+                  </Link>
+              </span>
+
+              {/* Upi */}
+              <span>
+                <Link to="/upi">
+                  <span className={(active==2)?'upi active':'upi'}
+                  onClick={() => setActive(2)}>UPI</span>
+                </Link>
+              </span>
+
+              {/* Net Banking */}
+              <span>
+                  <Link to="/netbanking">
+                    <span className={(active==3)?'active':''} onClick={ () => setActive(3)}>Net Banking</span>
+                  </Link>
+              </span>
+
+        </div>
+
+
+        {/* ------------ Routing   ----------- */}
+        <div className='routing-box'>      
+            <Routes>
+                <Route path="/" element={<CreditCard/>} />
+                <Route path="/netbanking" element={<NetBanking/>} />
+                <Route path="/upi" element={<UPI/>} />
+                <Route path="*" element={<NotFound/>} />
+            </Routes>
+        </div>
+
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </BrowserRouter>
     </>
   )
 }
