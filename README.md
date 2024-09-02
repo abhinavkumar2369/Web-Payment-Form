@@ -83,12 +83,13 @@
     cd Web-Payment-Form
     ```
 
-4. Install dependencies:
+3. Install dependencies:
    
     ```bash
     npm install
     ```
-5. Run the application:
+
+4. Run the application:
    
    ```bash
    npm run dev -- --host
@@ -101,11 +102,13 @@
 
 ## Screenshot 🖼️
 
+### Desktop View
 ![Credit-Card](https://github.com/user-attachments/assets/bc242141-37d8-4721-bcb6-c360928273d7)
-
 ![Upi](https://github.com/user-attachments/assets/e10b86b0-f639-480f-8aaa-daad613adbf4)
-
 ![Net-Banking](https://github.com/user-attachments/assets/6108035b-99c9-4e6d-99d4-f7a8d49fa218)
+
+### Mobile View
+![Combined Screenshot](https://github.com/user-attachments/assets/ed64382c-973d-4fbb-8860-2254e21d31ba)
 
 
 <!------------------------------------------------->
